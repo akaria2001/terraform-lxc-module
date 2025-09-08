@@ -1,3 +1,5 @@
+![Terraform](https://img.shields.io/badge/Terraform-ready-blue)
+
 # Terraform LXC Container Module
 
 This module creates and manages LXC containers using Terraform and the Null Provider.
