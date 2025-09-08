@@ -1,0 +1,16 @@
+#cloud-config
+package_update: true
+package_upgrade: true
+packages:
+  - curl
+  - git
+  - openssh-server
+
+users:
+  - name: ubuntu
+    ssh-authorized-keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDBMHqqmL02ALyQJou/qml9Cbupan84JGQSyhsI5toMd/nFP4zb00P8OopDztFyDhabwfhnnVbs2sxYXs70SLwJF1fJZ4+ODSeFmc+k4x6qVt15BeNHbWGvcXe/BoAmpPzs/FrwCObARsX8RrcMpmv6uTTEV0Ibn4n7880ZTKDp6NBlz8GFU4p3Gh3SJGA5OdRG/vSruHf4wjQbFSEJ/TvBFDtR2xsi/i8bvUcrWty8fTRBqm4SSMNAvQjhp1fc9H/4wERSEr3V0cBrdY1Y8GQXVVWZ3GLSBfKCl3iFaVl28tJ/rO1ikKYB7GAs6exROofMsADcfaTLvLbLQx6LroUDC+ytr1w+5La5LqOJUlhswIpEDEaxAFN0b4xIVM9hgvAtgLN6msUaLcNl09DwB3vTzky8ybsgmMYoKHjh+lNQyt2UOTSmygL/boyRzWReX4jUbe0ye3ADpropqemG0ofgMC8nDPzaffoFdL3QSuZiAqlMRveCSjwAXAQfQoxy2sxWv/9wW05oIxDFO+ZWkrL22EpV1MGoWYY2Uvr3yew0k8EAmsIjT3zZOgTBq987QAsHDZmI07ZNq/FuPlcmmFC9q0KG0os3syjvE4xXPYGVokWVWeneU4SfKFRWp4vadjGuypu5nSgLhcTfkstlAMt3PL+UJY6sSSzjntEC6iQifw== ubuntu@UbuntuMac
+
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+    shell: /bin/bash
+
